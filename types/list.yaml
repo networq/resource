@@ -1,0 +1,5 @@
+name: list
+
+fields:
+  resources:
+    type: networq:core:resource[]

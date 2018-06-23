@@ -1,0 +1,13 @@
+<ul class="list-group">
+  {% for resource in node['networq:resource:list']['resources'] %}
+
+    <li class="list-group-item">
+        <h3>{{ resource['networq:core:node']['name']}}</h3>
+        {{ resource|nodeButton|raw }}<br />
+        Type: {{ resource['networq:resource:resource']['type'] }}<br />
+        Url: <a target="_blank" href="{{ resource['networq:core:node']['url'] }}">
+          {{ resource['networq:core:node']['url']}}
+        </a><br />
+    </li>
+  {% endfor %}
+</ul>

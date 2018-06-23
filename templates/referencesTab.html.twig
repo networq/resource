@@ -1,0 +1,10 @@
+<ul class="list-group">
+  <p>This resource is referenced from the following resource-lists:</p>
+  {% for ref in node['networq:resource:resource']['references'] %}
+
+    <li class="list-group-item">
+        <h3>{{ ref['networq:core:node']['name']}}</h3>
+        {{ ref|nodeButton|raw }}<br />
+    </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,13 @@
+name: networq:resource
+description: Networq resource types
+license: MIT
+
+widgets:
+  resourcesTab:
+    type: networq:resource:list
+    hook: tabs
+    label: Resources
+  referencesTab:
+    type: networq:resource:resource
+    hook: tabs
+    label: References

@@ -1,0 +1,9 @@
+name: resource
+
+fields:
+  type:
+    type: string
+  references:
+    type: networq:resource:list[]
+    reverse: resources
+    
